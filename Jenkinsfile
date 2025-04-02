@@ -4,7 +4,7 @@ pipeline {
     environment {
         // Customize these variables
         DOCKER_IMAGE = "fasj/python-container-app"
-        KUBE_CONFIG = "--kubeconfig=$HOME\.kube\config"  // Only needed if Jenkins isn't in-cluster
+        KUBE_CONFIG = "--kubeconfig= $HOME\.kube\config"  // Only needed if Jenkins isn't in-cluster
     }
 
     stages {
